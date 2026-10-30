@@ -53,9 +53,25 @@ flowchart TD
         L --> P[SourceChips\nDaisyUI badges with URLs]
     end
 
-    style Indexing fill:#1a1f2e,stroke:#3d4f6e
-    style Query fill:#1a1f2e,stroke:#3d4f6e
-    style Frontend fill:#1a1f2e,stroke:#3d4f6e
+    classDef source fill:#1e40af,stroke:#93c5fd,stroke-width:2px,color:#ffffff
+    classDef process fill:#0f766e,stroke:#5eead4,stroke-width:2px,color:#ffffff
+    classDef store fill:#7c2d12,stroke:#fdba74,stroke-width:2px,color:#ffffff
+    classDef rank fill:#6d28d9,stroke:#c4b5fd,stroke-width:2px,color:#ffffff
+    classDef llm fill:#b91c1c,stroke:#fca5a5,stroke-width:2px,color:#ffffff
+    classDef ui fill:#15803d,stroke:#86efac,stroke-width:2px,color:#ffffff
+
+    class A,Q source
+    class B,C,G,H,I,J process
+    class D,E,F store
+    class K,L rank
+    class M llm
+    class N,O,P ui
+
+    style Indexing fill:#f1f5f9,stroke:#334155,stroke-width:2px,color:#0f172a
+    style Query fill:#f1f5f9,stroke:#334155,stroke-width:2px,color:#0f172a
+    style Frontend fill:#f1f5f9,stroke:#334155,stroke-width:2px,color:#0f172a
+
+    linkStyle default stroke:#f59e0b,stroke-width:2px
 ```
 
 ---
