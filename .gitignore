@@ -1,0 +1,26 @@
+# Secrets
+.env
+backend/.env
+frontend/.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.uv/
+*.egg-info/
+
+# UV
+uv.lock
+
+# Data (BM25 index and SQLite are generated, not committed)
+backend/data/
+
+# Node
+node_modules/
+frontend/dist/
+frontend/node_modules/
+
+# Misc
+.DS_Store
+Thumbs.db
